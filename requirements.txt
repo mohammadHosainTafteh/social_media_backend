@@ -1,0 +1,12 @@
+# Django
+Django==5.0.2
+djangorestframework==3.14.0
+
+# Authentication
+
+
+# Database
+mysqlclient==2.2.4
+
+# Photo & image
+pillow==10.2.0
