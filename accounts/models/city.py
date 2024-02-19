@@ -1,11 +1,14 @@
 from django.db import models
 
 from accounts.models import Province
+from core import BaseModel
 
 
-class City(models.Model):
+class City(BaseModel):
     province = models.ForeignKey(to=Province, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
-    is_active = models.BooleanField(default=True, null=False, blank=False)
-    created_time = models.DateTimeField(auto_now_add=True)
-    updated_time = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name = 'City'
+        verbose_name_plural = 'Cities'
+        db_table = 'cities'
