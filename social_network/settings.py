@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 from .local_settings import *
@@ -93,3 +94,7 @@ STATIC_URL = 'static/'
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Media Files
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_URL = '/media/'
