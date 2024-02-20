@@ -9,3 +9,6 @@ from .city import City
 from .payment import Payment
 from .score import Score
 from .device_model import DeviceModel
+from .phone_number import PhoneNumber
+from .country_phone_code import CountryPhoneCode
+from .my_user import MyUser

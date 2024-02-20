@@ -1,1 +1,1 @@
-from .my_user_seriallizer import MyUserSerializer
+from .regular_user_serializer import RegisterRegularUserSerializer
